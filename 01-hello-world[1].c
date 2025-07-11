@@ -1,3 +1,5 @@
+/*    BTK Akademi - C Programlama Dili Kursu   */
+/*           İlk C Programımız                 */
 #include <stdio.h>
 
 int main() {
