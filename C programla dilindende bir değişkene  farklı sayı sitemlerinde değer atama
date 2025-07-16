@@ -1,0 +1,20 @@
+/* BTK Akademi - C programlama Dili Kursu */
+/**
+ * C programla dilindende bir değişkene 
+ * farklı sayı sitemlerinde değer atama
+ */
+ #include <stdio.h>
+ 
+ int main() {
+     
+     int a=99; // 10' luk sayı düzeninde (decimal)
+     int b=0b01100011; // 2'lik sayı düzeninde (binary)
+     int c=0x63; // 16'lık sayı düzeninde (hexadecimal)
+     
+    printf("a= %d\n" ,a);
+    printf("b= %d\n", b);
+    printf("c= %d\n", c);
+    
+    return 0;
+    
+ }
