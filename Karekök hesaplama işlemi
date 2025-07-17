@@ -1,0 +1,25 @@
+/* BTK Akademi - C Programlama Dili Kursu*/
+/** 
+ * Karekök hesabının C programlama dilinde yapılması*/
+ 
+#include <stdio.h>
+#include <math.h> // sqrt() fonksiyonunu kullanabilmek için
+
+int main()
+{
+    double sayi, karekok;
+    
+
+    /* kullanıcıdan sayı değerial*/
+    printf("Karekökü hesaplanacak sayıyı giriniz:");
+    scanf("%lf", &sayi);
+    
+    /* Sayının kare kökünü hesapla */
+    karekok =sqrt(sayi);
+    
+    /* sonucu yazdır */
+    printf("%.2lf sayının karekökü = %.2lf", sayi, karekok);
+    
+
+    return 0;
+}
