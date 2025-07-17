@@ -1,0 +1,36 @@
+/* BTK Akademi - C Programlama Dili Kursu*/
+/** 
+ * Basit ve bileşik faiz hesabının C programlama dilinde yapılması*/
+ 
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float ana_para, zaman, faiz_orani, basit_faiz_miktari, bilesik_faiz_miktari;
+    
+
+    /* Girdileri al*/
+    printf("Ana para miktarını giriniz:");
+    scanf("%f", &ana_para);
+    
+   printf("Zamanı giriniz:");
+   scanf("%f", &zaman);
+   
+   printf("Faiz oranını giriniz:");
+   scanf("%f", &faiz_orani);
+   
+   /* Basit faiz hesabı ile faiz miktarı hasapla*/
+   basit_faiz_miktari = (ana_para * zaman * faiz_orani) / 100;
+    
+    /* Sonucu yazdır */
+    printf("Basit faiz heesabı ile hesaplana faiz miktarı= %f", basit_faiz_miktari);
+    
+    /* Bileşik faiz heresabı ile faiz miktarını hesapla*/
+    bilesik_faiz_miktari = ana_para * (pow((1 + faiz_orani / 100),zaman));
+    
+    /* Bileşik faiz hesabını yazdır */
+    printf("Bileşik faiz hasabı ile hesaplanan faiz miktarı = %f", bilesik_faiz_miktari);
+
+    return 0;
+}
