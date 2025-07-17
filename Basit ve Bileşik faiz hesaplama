@@ -24,7 +24,7 @@ int main()
    basit_faiz_miktari = (ana_para * zaman * faiz_orani) / 100;
     
     /* Sonucu yazdır */
-    printf("Basit faiz heesabı ile hesaplana faiz miktarı= %f", basit_faiz_miktari);
+    printf("Basit faiz heesabı ile hesaplana faiz miktarı= %f"\n, basit_faiz_miktari);
     
     /* Bileşik faiz heresabı ile faiz miktarını hesapla*/
     bilesik_faiz_miktari = ana_para * (pow((1 + faiz_orani / 100),zaman));
