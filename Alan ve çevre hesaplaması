@@ -1,0 +1,32 @@
+/* BTK Akademi - C Programlama Dili Kursu */
+/** 
+ * Dikdörtgenin alanının ve çevresinin
+ * C programlama dilinde hesaplanması
+ * */
+ 
+ #include <stdio.h>
+ int main()
+ {
+     float boy, en , cevre , alan;
+     
+     /* uzunluk ve genişlik değerlerini kullanıcıdan al*/
+     printf("Dikdörtgenin uzunluğunu giriniz;");
+     scanf("%f", &boy);
+     printf("Dikdörtgenin genişliğiini giriniz;");
+     scanf("%f", &en);
+     
+     /* Dikdörtgenin çevresini hesapla */
+     cevre = 2 * (boy + en);
+     
+     /* dikdörtgenin çevresini yazdır*/
+     printf("Dikdörtgenin çevresi = %f birim karedir \n",cevre);
+     
+     /* dikdörtgenin alanını hesapla*/
+     alan = boy * en;
+     
+     /* dikdörtgenin alanını yazdır*/
+     printf("Dikdörtgenin alanı = %f birim karedir", alan);
+     
+     return 0;
+ }
+   
