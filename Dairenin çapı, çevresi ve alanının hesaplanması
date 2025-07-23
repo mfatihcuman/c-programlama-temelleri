@@ -1,0 +1,30 @@
+/* BTK Akademi - C Programlama Dili Kursu */
+/** 
+ * Çenberin çapının ve çevresinin,
+ * ilgili dairenin alanının 
+ * C programlama dilinde hesaplanması
+ * */
+ 
+ #include <stdio.h>
+ #include <math.h>  // M_PI sayısını kullanmak maçlı
+ int main()
+ {
+    float yaricap, cap, cevre , alan;
+    /* kullanıcıdan yarıçapı bilgisini al */
+    printf("Çemberin/Dairenin yapı çapını giriniz: ");
+    scanf("%f", &yaricap);
+     
+    /* çap , çevre ve alan değerlerini hesapla*/
+     
+    cap = 2* yaricap;
+    cevre = 2 * M_PI * yaricap;
+    alan = M_PI * (yaricap * yaricap);
+    
+    /* tüm sonuçları yazdır */
+    printf("Çemberin Çapı = %.3f birimdir\n", cap);
+    printf("Çemberin çevresi = %.3f birimdir \n", cevre);
+    printf("Dairenin alanı = %.3f birim karedir" ,alan);
+     
+     return 0;
+ }
+    
