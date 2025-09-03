@@ -1,0 +1,21 @@
+/*BTK Akademi C - Programlama Dili Kursu */
+/* C programlama dilinde enumarated type'lar
+ * yanş numaralandırılmış tipler*/
+ 
+ #include<stdio.h>
+ 
+ enum Seviyeler {
+    DUSUK = 4,
+    ORTA = 28,
+    YUKSEK = 34
+ };
+ int main (){
+    // numaralandırılmış tipte bir değişken tanımla
+    // ve değer ata
+    enum Seviyeler OdaSicakliği = ORTA;
+    
+    //numaralandırılmış tipteki değişkeni yazdır
+    printf("%d",OdaSicakliği);
+    
+    return 0;
+ }
