@@ -1,0 +1,25 @@
+/* BTK Akademi C - Programlama Dili Kursu */
+/* C programlama dilinde Boolean değişkenler */
+
+#include <stdio.h>
+#include <stdbool.h>  // boolean işlemler kütüphanesi
+
+int main() {
+    bool ProgramcilikGuzelMi = true;
+    bool TembellikIyiMi = false;
+    printf("%d\n", ProgramcilikGuzelMi); // 1(true) döndürecek
+    printf("%d\n", TembellikIyiMi);      //0(false) döndürecek
+    printf("\n....\n");
+    
+    printf("%d\n",10 >9);  //1 (true) döndürecek
+    
+    int x =10;
+    int y =9;
+    printf("%d\n", x>y); //1 (true) dçndürecek
+    printf("\n....\n");
+    
+    printf("%d\n", 10==10); //1 (true) döndürecek
+    printf("%d\n", 10==15); //0 (false) döndürecek
+    printf("%d", 5!=55);    //1 (true) döndürecek
+    return 0;
+}
