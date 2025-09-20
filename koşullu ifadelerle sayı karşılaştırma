@@ -1,0 +1,54 @@
+/*BTK Akademi C - Programlama Dili Kursu*/
+/**
+ * koşullu ifadelerr ile sayı karşılaştırma 
+ * işlemlerinin c progralma dilinde yapılması
+*/
+#include <stdio.h>
+
+int main ()
+{
+    int sayi1, sayi2, sayi3;
+    
+    /* Kullanıcıdan üç sayı al*/
+    printf("Lütfen üç sayı değeri giriniz;");
+    scanf("%d%d%d", &sayi1, &sayi2, &sayi3);
+    
+    /*sayi1 ikisinden de büyükse*/
+    if(sayi1 > sayi2 && sayi1> sayi3)
+    {
+        printf("%d daha büyüktür", sayi1);
+    }
+    
+    /* sayi2 ikisinden de büyükse*/
+    if(sayi2 > sayi1 && sayi2> sayi3)
+    {
+        printf("%d daha büyüktür", sayi2);
+    }
+    
+    /* sayi3 ikisinden de büyükse*/
+    if(sayi3 > sayi1 && sayi3> sayi2)
+    {
+        printf("%d daha büyüktür", sayi3);
+    }
+    
+    // Eşitlik durumları
+    if(sayi1 == sayi2 && sayi1 > sayi3)
+    {
+        printf("%d ve %d en büyük ve eşittir\n", sayi1, sayi2);
+    }
+    if(sayi1 == sayi3 && sayi1 > sayi2)
+    {
+        printf("%d ve %d en büyük ve eşittir\n", sayi1, sayi3);
+    }
+    if(sayi2 == sayi3 && sayi2 > sayi1)
+    {
+        printf("%d ve %d en büyük ve eşittir\n", sayi2, sayi3);
+    }
+    // Hepsi eşit olma durumu
+    if(sayi1 == sayi2 && sayi2 == sayi3)
+    {
+        printf("Üç sayı da birbirine eşittir\n"); 
+    }
+    
+    return 0;
+}
