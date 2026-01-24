@@ -1,0 +1,32 @@
+/*BTK Akademi - C Programlama Dili Kursu */
+/** 
+ * C programlama dilinde artık yıl hesabı*/
+ 
+#include <stdio.h>
+ 
+int main()
+{
+    int yil;
+    
+    /* Kullanıcıdan yıl değeri alınız */
+    printf(" Yıl değeri giriniz:");
+    scanf("%d", &yil);
+    
+    /*
+     *değer 4'e bölünelebiliyorsa ve 100'e bölünemiyorsa
+     *veyaa değer 400'e bölünelebiliyorsa
+     *ilgili yıl Artık Yıl'dır
+     aksi taktirde Artık Yıl değildir
+     */
+    if(((yil % 4 ==0) && (yil % 100 != 0)) ||(yil % 400 ==0))
+    {
+        printf("Söz konusu yıl artık yıldır!...");
+    }
+    else
+    {
+        printf("Söz konusu yıl artık yıl değildir!...");
+    }
+    
+    return 0;
+    
+}
